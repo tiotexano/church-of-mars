@@ -1,1 +1,179 @@
-Embedded version with the new image the user just uploaded is being deployed. Full content prepared.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Church of Mars</title>
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --deep: #111111;
+      --rust: #c1440e;
+      --orange: #e07a3d;
+      --white: #f8f8f8;
+      --cream: #e8e0d5;
+      --muted: #a89f94;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.65;
+    }
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: rgba(10,10,10,0.9); backdrop-filter: blur(10px);
+      padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;
+    }
+    nav .logo { font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; }
+    nav .logo span { color: var(--orange); }
+    nav a { color: var(--cream); text-decoration: none; margin-left: 1.5rem; font-size: 0.95rem; }
+    nav a:hover { color: var(--orange); }
+    .hero {
+      height: 100vh; min-height: 640px;
+      background: linear-gradient(to bottom, rgba(10,10,10,0.4), rgba(10,10,10,0.78)),
+                  url('church-hero.jpg') center/cover no-repeat;
+      display: flex; align-items: center; justify-content: center; text-align: center;
+      padding: 2rem;
+    }
+    .hero-content h1 {
+      font-size: clamp(3rem, 7vw, 5.8rem);
+      font-weight: 800; letter-spacing: -0.025em; line-height: 1.02;
+      margin-bottom: 0.6rem;
+    }
+    .hero-content h1 span { color: var(--orange); }
+    .hero-content .sub {
+      font-size: 1.4rem; color: var(--cream); max-width: 680px; margin: 0 auto 2.2rem;
+    }
+    .btn {
+      display: inline-block; background: var(--white); color: var(--black);
+      padding: 0.95rem 2.1rem; border-radius: 4px; font-weight: 600; text-decoration: none;
+      transition: transform 0.15s, background 0.15s;
+    }
+    .btn:hover { background: var(--orange); color: white; transform: translateY(-2px); }
+    section { padding: 5.5rem 2rem; max-width: 920px; margin: 0 auto; }
+    section h2 { font-size: 2.3rem; margin-bottom: 1.4rem; }
+    section h2 span { color: var(--orange); }
+    .grid { display: grid; gap: 1.8rem; margin-top: 2rem; }
+    @media (min-width: 700px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card {
+      background: var(--deep); padding: 1.8rem; border-radius: 8px;
+      border: 1px solid #222;
+    }
+    .card h3 { margin-bottom: 0.5rem; color: var(--orange); }
+    form { display: flex; flex-direction: column; gap: 1rem; max-width: 420px; margin-top: 1.5rem; }
+    input, button {
+      padding: 0.9rem 1rem; border: none; border-radius: 4px; font-size: 1rem;
+    }
+    input { background: #1a1a1a; color: white; border: 1px solid #333; }
+    button { background: var(--rust); color: white; font-weight: 600; cursor: pointer; }
+    button:hover { background: var(--orange); }
+    footer {
+      text-align: center; padding: 3rem 2rem; color: var(--muted); font-size: 0.9rem;
+      border-top: 1px solid #222; margin-top: 3rem;
+    }
+    footer a { color: var(--orange); text-decoration: none; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">CHURCH OF <span>MARS</span></div>
+    <div>
+      <a href="#vision">Vision</a>
+      <a href="#structure">Structure</a>
+      <a href="#plan">Plan</a>
+      <a href="#blog">Blog</a>
+      <a href="#join">Join</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Church of <span>Mars</span></h1>
+      <p class="sub">Non-denominational. Planning the first house of worship on Mars. Congregation starts on Earth. Low shame. High humor. Serious underneath.</p>
+      <a href="#join" class="btn">Join the Conversation</a>
+    </div>
+  </header>
+
+  <section id="vision">
+    <h2>The Future of Faith <span>Off Earth</span></h2>
+    <p>When people leave this planet and stay, the question of worship does not disappear. Someone has to prepare for it.</p>
+    <p style="margin-top:1rem;">Church of Mars is a non-denominational Christian effort to do that work now. We are not waiting for the first permanent habitat to ask what a house of worship looks like on another world. We are starting the conversation, the community, and the plans while we are still here.</p>
+    <p style="margin-top:1rem;">The tone is simple: authentic, low-shame, a little kickback. Clergy and congregation living in isolation will need a sense of humor. We are not interested in performative righteousness. We are interested in the real work of preparing a spiritual place for people who will live far from Earth.</p>
+    <p style="margin-top:1.5rem; font-size: 0.95rem; color: var(--muted);">A project of <a href="https://milkywayministries.org">Milky Way Ministries</a>.</p>
+  </section>
+
+  <section id="structure">
+    <h2>Conceptual <span>Structure</span></h2>
+    <p>A compact barrel-vaulted nave built from Martian regolith. Thick walls for radiation shielding and thermal mass. Partially bermed. Airlock entrance. A pure white cross that stands in high contrast against the iron-oxide ground and pinkish sky.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>ISRU Construction</h3>
+        <p>Walls 2.5–3.5 meters thick of robotic 3D-printed sulfur-concrete or sintered regolith. Layered print texture matches the surrounding soil. Pressurized interior with liner. Built from what is already there.</p>
+      </div>
+      <div class="card">
+        <h3>The White Cross</h3>
+        <p>High-contrast pure white geometric cross on the facade. High-albedo material that remains visible against the rusty landscape and hazy sky. Representation that can be seen from a distance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan">
+    <h2>Phased <span>Roadmap</span></h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1. Conversation</h3>
+        <p>The congregation starts on Earth. Video, dialogue, and community now. Content about the future of faith once humans leave this planet. Merchandise that carries the question.</p>
+      </div>
+      <div class="card">
+        <h3>2. Symbolic</h3>
+        <p>Bible, communion elements, or microfilm on an early uncrewed cargo flight. Low mass. First Christian representation on the surface.</p>
+      </div>
+      <div class="card">
+        <h3>3. Modular</h3>
+        <p>Habitat-integrated or standalone regolith chapel with the first crews. Radiation-shielded, pressurized, functional for a small group.</p>
+      </div>
+      <div class="card">
+        <h3>4. Congregation</h3>
+        <p>Self-sustaining local church once permanent settlement exists. Built from the ground up with local materials and people who choose to stay.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>From the <span>Conversation</span></h2>
+    <p style="margin-bottom:2rem; color: var(--muted);">Short notes on faith, isolation, and what it means to take the cross somewhere no one has lived yet.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>The First Congregation Starts on Earth</h3>
+        <p>Before any boots are on Martian soil, the conversation has to exist here. Church of Mars is that conversation — non-denominational, low-shame, and clear that people living in isolation will need more than oxygen and power.</p>
+      </div>
+      <div class="card">
+        <h3>Why a Church Built from Regolith?</h3>
+        <p>The structure in the image is not decoration. Thick sintered or printed Martian soil for radiation shielding, a high-contrast white cross for visibility, and a pressurized interior that can function for a small crew. Representation before permanent settlement.</p>
+      </div>
+      <div class="card">
+        <h3>Low Shame. High Humor. Serious Underneath.</h3>
+        <p>Most people are tired of performative righteousness. On an isolated planet the performance will not survive. The tone of this work is intentional: authentic, a little kickback, and focused on the actual spiritual needs of future settlers.</p>
+      </div>
+    </div>
+    <p style="margin-top:2rem; font-size:0.95rem; color: var(--muted);">More writing coming. This is the beginning of the public record.</p>
+  </section>
+
+  <section id="join">
+    <h2>Join the <span>Conversation</span></h2>
+    <p>Early. Conceptual. Open. If you want updates, want to talk about what faith looks like off Earth, or simply want to be counted among the people thinking about it now, leave your email.</p>
+    <form onsubmit="event.preventDefault(); alert('Thank you. We will be in touch.');">
+      <input type="email" placeholder="Your email" required>
+      <button type="submit">Get Updates</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Church of Mars · A project of <a href="https://milkywayministries.org">Milky Way Ministries</a></p>
+    <p style="margin-top:0.5rem;"><a href="https://churchofmars.com" style="color: var(--cream);">www.churchofmars.com</a> · Conceptual and aspirational · Not yet operational</p>
+  </footer>
+</body>
+</html>
